@@ -1,0 +1,4 @@
+--2015-02-23 01:19:28--  https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js
+Resolving ajax.googleapis.com... 173.194.72.95, 2404:6800:4008:c01::5f
+Connecting to ajax.googleapis.com|173.194.72.95|:443... failed: Operation timed out.
+Connecting to ajax.googleapis.com|2404:6800:4008:c01::5f|:443... failed: No route to host.

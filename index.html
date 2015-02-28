@@ -6,10 +6,11 @@
     <title>World-explore by 100pah</title>
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="stylesheets/index.css">
+    <script src="javascripts/jquery.min.js"></script>
     <script src="javascripts/respond.js"></script>
     <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+      <script src="javascripts/html5.js"></script>
     <![endif]-->
     <!--[if lt IE 8]>
     <link rel="stylesheet" href="stylesheets/ie.css">
@@ -18,45 +19,20 @@
 
     </head>
     <body>
-        <!--
-        <div id="header">
-            <nav>
-                <li class="downloads"><a href="https://github.com/100pah/world-explore">View On GitHub</a></li>
-            </nav>
-        </div> end header -->
 
-        <div class="wrapper">
+        <div class="left-menu">
+            <div class="content"></div>
+        </div>
+        <div class="main-ifr-box">
+            <iframe id="main-ifr" class="main-ifr" src="main.html" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="auto" hspace="0" vspace="0"></iframe>
+        </div>
+        <!--[if !IE]><script>fixScale(document);</script><![endif]-->
 
-        <section>
-            <div id="title">
-                <h1>欧洲去过的推荐的地方</h1>
-                <p>人生应该到处看看</p>
-                <hr class="hr-head">
-                <span class="credits right">Project maintained by <a href="https://github.com/100pah">100pah</a></span>
-            </div>
+        <script src="javascripts/worldExplore.js"></script>
+        <script src="javascripts/helper.js"></script>
+        <script src="javascripts/recommendList.js"></script>
+        <script src="javascripts/placeList.js"></script>
+        <script src="javascripts/index.js"></script>
 
-            <h1><a class="anchor" href="#tips" aria-hidden="true"></a>提示</h1>
-            <hr>
-            <ul>
-                <li>很多国内网站不太能看到的小地方，往往是精髓和经典。</li>
-                <li>要想有难忘的回忆，不要忽视两个常常容易被忽视的因素：<strong>天气好</strong>&nbsp;和&nbsp;<strong>人不太多</strong>。</li>
-                <li>以下的推荐&nbsp;<strong>排名分先后</strong>，参见“排序”。</li>
-                <li>只列出印象最深觉得最值得看的地方，大众地方并没有列出。</li>
-            </ul>
-            <br>
-            <br>
-
-            <h1><a class="anchor" href="#menu" aria-hidden="true"></a>目录</h1>
-            <hr>
-            <ol>
-                <li>巴黎 - 凡尔赛宫（Chateau de Versailles）</li>
-            </ol>
-
-
-        </section>
-
-    </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-
-  </body>
+    </body>
 </html>
