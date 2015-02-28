@@ -43,7 +43,7 @@
     function renderBtns($el) {
         var html = [];
         html.push(
-            '<div class="', BTN_CSS, '" data-method="byMark">按打分排序</div>',
+            '<div class="', BTN_CSS, '" data-method="byMark">按推荐度排序</div>',
             '<div class="', BTN_CSS, ' ', BTN_ACTIVE_CSS, '" data-method="byRegion">按地区分类</div>'
         );
         var $btnBox = $el.find('.' + BTNS_CSS);
@@ -77,7 +77,8 @@
                 var nameCN = placeListItem.name.cn || '-';
                 var nameLocal = placeListItem.name.local || '';
                 contentArr.push(
-                    '<li class="place-list-item" data-place-id="', encodeHTML(placeListItem.id), '">',
+                    '<li class="place-list-item" data-place-id="', encodeHTML(placeListItem.id),
+                        '" title="主观推荐度打分：', encodeHTML(placeListItem.mark), '">',
                         '<span class="place-list-item-cn">', encodeHTML(nameCN), '</span>',
                         '<span class="place-list-item-local">', encodeHTML(nameLocal), '</span>',
                     '</li>'
@@ -123,7 +124,8 @@
                     var nameCN = placeListItem.name.cn || '-';
                     var nameLocal = placeListItem.name.local || '';
                     contentArr.push(
-                        '<li class="place-list-item" data-place-id="', encodeHTML(placeListItem.id), '">',
+                        '<li class="place-list-item" data-place-id="', encodeHTML(placeListItem.id),
+                            '" title="主观推荐度打分：', encodeHTML(placeListItem.mark), '">',
                             '<span class="place-list-item-cn">', encodeHTML(nameCN), '</span>',
                             '<span class="place-list-item-local">', encodeHTML(nameLocal), '</span>',
                         '</li>'
