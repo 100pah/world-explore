@@ -40,12 +40,12 @@
             var imgItem = imgs[i];
             var imgItemType = $.type(imgItem);
             if (imgItemType === 'string' || imgItemType === 'number') {
-                imgItem = {suffix: imgItem};
+                imgItem = {name: imgItem};
             }
 
-            var imgSrc = 'images/asset/' + placeId + '/' + placeId + '-' + imgItem.suffix + '.JPG';
+            var imgSrc = 'images/asset/' + placeId + '/' + imgItem.name + '.JPG';
             htmlImg.push(
-                '<li class="img-item">',
+                '<li class="img-item" title="', encodeHTML(imgItem.name) + '">',
                     '<img src="', encodeHTML(imgSrc), '" />',
                     imgItem.desc
                         ? ('<div class="img-desc">' + encodeHTML(imgItem.desc) + '</div>')
