@@ -10,13 +10,13 @@ html, body {
     position: absolute;
     left: 0;
     top: 0;
-    width: 240px;
+    width: 330px;
     height: 100%;
     background: #101010;
 }
 .main-ifr-box {
     position:relative;
-    margin-left: 250px;
+    margin-left: 340px;
     height:100%;
 }
 .main-ifr {
@@ -29,9 +29,9 @@ html, body {
 .left-menu-content {
     position: absolute;
     top: 20px;
-    left: 10px;
+    left: 30px;
     bottom: 30px;
-    right: 10px;
+    right: 30px;
 }
 
 .left-menu-content .place-list-btns {
@@ -87,7 +87,7 @@ html, body {
 .left-menu-content .place-list-content {
     overflow: auto;
     position: absolute;
-    top: 40px;
+    top: 50px;
     left: 0;
     right: 0;
     bottom: 0;
