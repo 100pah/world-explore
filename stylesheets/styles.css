@@ -548,7 +548,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   color: #e8e8e8;
   margin: 0 0 10px;
-  font-family: 'OpenSansRegular', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", "Segoe UI", Tahoma, Arial, "Hiragino Sans GB", STHeiti, "Microsoft Yahei", "WenQuanYi Micro Hei", sans-serif;
   font-weight: normal;
 }
 
