@@ -48,7 +48,7 @@
                 throw new Error('imgItem config error');
             }
 
-            var imgSrc = 'images/asset/' + placeId + '/' + imgItem.name + '.JPG';
+            var imgSrc = 'images/asset/' + placeId + '/' + imgItem.name + '.jpg';
             htmlImg.push(
                 '<li class="img-item" title="', encodeHTML(imgItem.name) + '">',
                     '<img src="', encodeHTML(imgSrc), '" />',
