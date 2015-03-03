@@ -40,7 +40,12 @@
             var imgItem = imgs[i];
             var imgItemType = $.type(imgItem);
             if (imgItemType === 'string' || imgItemType === 'number') {
-                imgItem = {name: imgItem};
+                imgItem = {name: imgItem, desc: ''};
+            }
+
+            // 防止配错
+            if (imgItem.name == null || imgItem.desc == null) {
+                throw new Error('imgItem config error');
             }
 
             var imgSrc = 'images/asset/' + placeId + '/' + imgItem.name + '.JPG';
